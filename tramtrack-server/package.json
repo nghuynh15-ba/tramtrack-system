@@ -1,0 +1,30 @@
+{
+  "name": "tramtrack-server",
+  "version": "1.1.0",
+  "private": true,
+  "type": "module",
+  "description": "API xác thực và truy xuất nguồn gốc cấp đơn vị sản phẩm — TramTrack",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "dev": "node --watch src/index.js",
+    "start": "node src/index.js",
+    "migrate": "node scripts/migrate.js",
+    "mint": "node scripts/mint.js",
+    "ban-in": "node scripts/ban-in.js",
+    "tao-nguoi-dung": "node scripts/tao-nguoi-dung.js",
+    "seed-demo": "node scripts/seed-demo.js",
+    "test:race": "node scripts/test-race.js",
+    "test:api": "node scripts/test-api.js",
+    "dat-lai-mat-khau": "node scripts/dat-lai-mat-khau.js"
+  },
+  "dependencies": {
+    "@node-rs/argon2": "^2.0.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "pg": "^8.13.1",
+    "qrcode": "^1.5.4"
+  }
+}
